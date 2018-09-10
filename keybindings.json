@@ -1,0 +1,67 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { 
+        "key": "m  a",            
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus && explorerViewletVisible"
+    },
+    { 
+        "key": "m  d",            
+        "command": "deleteFile",
+        "when": "explorerViewletFocus && explorerViewletVisible"
+    },
+    { 
+        "key": "m  f",            
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus && explorerViewletVisible"
+    },
+    { 
+        "key": "ctrl+j",            
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    { 
+        "key": "ctrl+k",            
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    { 
+        "key": "cmd+enter",            
+        "command": "renameFile",
+            "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.terminal.focusAtIndex1",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.terminal.focusAtIndex2",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.terminal.focusAtIndex3",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    }
+]
